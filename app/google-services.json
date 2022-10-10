@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "367961954544",
+    "project_id": "newsfeedapp-ea8c5",
+    "storage_bucket": "newsfeedapp-ea8c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367961954544:android:de798169b42b1f43edca35",
+        "android_client_info": {
+          "package_name": "com.easycodingg.newsfeedapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367961954544-4vp5sm7erdtj228v46vhuqg2bdn2h4el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoK-Z_Ofd1uWvFwHSHuY49H4dDH42z0NE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367961954544-4vp5sm7erdtj228v46vhuqg2bdn2h4el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

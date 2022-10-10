@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/discoverFragment">
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.easycodingg.newsfeedapp.ui.fragments.NewsFragment"
+        android:label="NewsFragment" >
+        <argument
+            android:name="queryType"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="queryValue"
+            app:argType="string"
+            android:defaultValue=" " />
+        <action
+            android:id="@+id/action_newsFragment_to_fullArticleFragment"
+            app:destination="@id/fullArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.easycodingg.newsfeedapp.ui.fragments.DiscoverFragment"
+        android:label="DiscoverFragment" >
+        <action
+            android:id="@+id/action_discoverFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullArticleFragment"
+        android:name="com.easycodingg.newsfeedapp.ui.fragments.FullArticleFragment"
+        android:label="FullArticleFragment" >
+        <argument
+            android:name="articleUrl"
+            app:argType="string" />
+    </fragment>
+</navigation>

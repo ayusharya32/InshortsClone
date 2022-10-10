@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/cardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clQuery"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="25dp"
+        android:background="@drawable/bg_query">
+
+        <ImageView
+            android:id="@+id/ivQuery"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_bookmarks"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:tint="@color/teal_700" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roboto"
+            android:text="Trending"
+            android:textColor="@color/teal_700"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivQuery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

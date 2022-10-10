@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/ivArticleImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/gradient_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        app:fabCustomSize="40dp"
+        app:tint="@color/teal_700"
+        android:src="@drawable/ic_bookmark_unmarked"
+        app:backgroundTint="#b3ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/ivArticleImage"
+        app:layout_constraintTop_toTopOf="@id/ivArticleImage" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        app:fabCustomSize="40dp"
+        app:tint="@color/teal_700"
+        android:src="@drawable/ic_share"
+        app:backgroundTint="#b3ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/ivArticleImage"
+        app:layout_constraintTop_toBottomOf="@id/fabBookmark" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/ScreenBackground3"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivArticleImage">
+
+        <TextView
+            android:id="@+id/tvArticleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingHorizontal="16dp"
+            android:text="@string/fake_news_title"
+            style="@style/ScreenTextColor2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvArticleDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingHorizontal="16dp"
+            android:text="@string/fake_news_description"
+            style="@style/ScreenTextColor4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvArticleSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-thin"
+            android:paddingHorizontal="16dp"
+            android:text="Source - Slashdot.org"
+            android:textColor="#292828"
+            style="@style/ScreenTextColor4"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFullArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Get Full News"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:drawableEndCompat="@drawable/ic_arrow_forward"
+        app:drawableTint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
